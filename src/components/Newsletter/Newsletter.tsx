@@ -11,11 +11,12 @@ export default function Newsletter() {
           boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
         }}
       >
-        <h2 className="text-center uppercase tracking-widest text-white text-sm lg:text-xl font-Lekton-Regular">
+        <h2 className="text-center uppercase tracking-widest text-white text-[1rem] lg:text-xl font-Lekton-Regular">
           Inscris-toi à la newsletter
         </h2>
         <p className="font-Lekton-Regular text-whiteText text-center text-[0.8rem] lg:text-[1rem]">
-          Recevez des nouvelles compos du faiseur de battements
+          Tu recevras un mail lors de la publication d&apos;une nouvelle
+          composition
         </p>
         <input
           type="email"

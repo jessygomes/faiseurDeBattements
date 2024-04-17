@@ -17,9 +17,17 @@ export default function Footer() {
         <p className=" text-whiteText text-center font-Lekton-Regular text-[0.8rem]">
           <Link href="/compositions">Compositions</Link> -{" "}
           <Link href="/contact">Contact</Link> -{" "}
-          <Link href="/contact">Instagram</Link> -{" "}
-          <Link href="/contact">Soundcloud</Link> -{" "}
-          <Link href="/mentions-legales">Mentions légales</Link> -{" "}
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/cj__sanshi?igsh=NWQzejV1eHExMnB5"
+          >
+            Instagram
+          </Link>{" "}
+          -{" "}
+          <Link target="_blank" href="https://soundcloud.com/sanshiprods">
+            Soundcloud
+          </Link>{" "}
+          - <Link href="/mentions-legales">Mentions légales</Link> -{" "}
           <Link href="/politique-de-confidentialite">
             Politique de confidentialité
           </Link>

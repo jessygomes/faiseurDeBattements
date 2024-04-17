@@ -3,9 +3,6 @@ import HeaderLogo from "@/components/HeaderLogo/HeaderLogo";
 import LastSong from "@/components/LastSong/LastSong";
 import LecteurHome from "@/components/LecteurHome/LecteurHome";
 import Navbar from "@/components/Navbar/Navbar";
-import Newsletter from "@/components/Newsletter/Newsletter";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
