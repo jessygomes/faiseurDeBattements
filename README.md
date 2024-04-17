@@ -1,5 +1,2 @@
-FAISEUR DE BATTEMENTS - Musical blog
-
-Je vous présente mon blog musical où vous pouvez écouter mes compositions où chacune possède un thème particulier pour s'imager le son.
-
-Développement NextJS
+FAISEUR DE BATTEMENTS
+I present to you my musical blog where you can listen to my compositions where each one has a particular theme to imagine the sound.
