@@ -1,20 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import Newsletter from "../Newsletter/Newsletter";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[5rem]">
-      {/* <div className="px-5 flex justify-between">
-        <p className="uppercase tracking-widest text-white text-xl lg:text-3xl font-LexendTera">
-          Faiseur
-        </p>
-        <p className="uppercase tracking-widest text-white text-xl lg:text-3xl font-LexendTera">
-          de
-        </p>
-        <p className="uppercase tracking-widest text-white text-xl lg:text-3xl font-LexendTera">
-          battements
-        </p>
-      </div> */}
+    <footer className="flex flex-col gap-[1rem]">
+      <Newsletter />
       <div
         className="w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
         style={{
