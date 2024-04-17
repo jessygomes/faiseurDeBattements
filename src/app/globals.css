@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,20 +14,34 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+@font-face {
+  font-family: "LexendTera";
+  src: url("../../public/fonts/LexendTera.ttf") format("truetype");
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "Sansation_Light";
+  src: url("../../public/fonts/Sansation_Light.ttf") format("truetype");
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Lekton-Regular";
+  src: url("../../public/fonts/Lekton-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lekton-Italic";
+  src: url("../../public/fonts/Lekton-Italic.ttf") format("truetype");
+}
+
+.btnHover {
+  text-shadow: 0 0 0px aliceblue, 0 0 5px aliceblue, 0 0 5px aliceblue,
+    0 0 5px aliceblue, 0 0 0px aliceblue, 0 0 0px aliceblue;
+  color: #ffffff;
+  backdrop-filter: blur(5px); /* Add this line */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 15px 9.9px 8px rgba(0, 0, 0, 0.25);
+  border: none;
 }

@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        blackPrimary: "#151515",
+        grisTransparant: "rgba(255, 255, 255, 0.06)",
+        blackCard: "rgba(30, 30, 30, 0.6)",
+        whiteText: "#f5f5f5",
+      },
+      fontFamily: {
+        LexendTera: ["LexendTera", "sans-serif"],
+        Sansation_Light: ["Sansation_Light", "sans-serif"],
+        "Lekton-Regular": ["Lekton-Regular", "sans-serif"],
+        "Lekton-Italic": ["Lekton-Italic", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
