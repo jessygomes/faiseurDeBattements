@@ -12,16 +12,15 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col">
         <section
-          className="h-[100vh] flex flex-col justify-around lg:justify-between items-center"
+          className="h-[100vh] flex flex-col justify-between lg:justify-between items-center"
           style={{
-            backgroundImage:
-              "linear-gradient(to top, transparent, black), url(/Images/464911.jpg)",
+            backgroundImage: " url(/Images/464911.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             filter: "grayscale(100%) opacity(0.90)",
           }}
         >
-          <div className="lg:mt-2">
+          <div className="mt-[5rem] lg:mt-2">
             <HeaderLogo />
           </div>
           <div className="pb-[2rem] flex flex-col justify-center items-center gap-2">
@@ -32,13 +31,13 @@ export default function Home() {
       </main>
 
       <section
-        className="h-[100vh]"
+        className="h-[100vh] bg-[#4E4E4E]"
         style={{
-          backgroundImage: "url(/Images/464911.jpg",
-          backgroundSize: "150%",
-          backgroundPosition: "center 95%",
-          filter: "grayscale(100%) opacity(0.89)",
+          backgroundImage: "url(/Images/464911.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center 90%",
           transform: "scale(-1)",
+          filter: "grayscale(100%) opacity(0.89)",
         }}
       >
         <div

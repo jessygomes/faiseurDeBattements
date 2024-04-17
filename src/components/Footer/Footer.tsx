@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="flex flex-col gap-[1rem]">
       <Newsletter />
       <div
-        className="w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
+        className="w-[95%] lg:w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.5)",
           backdropFilter: "blur(3px)",
@@ -26,13 +26,12 @@ export default function Footer() {
         </p>
       </div>
       <div
-        className="w-[50%] mx-auto mb-1 py-[0.5rem] flex flex-col gap-4"
+        className="w-[100%] mx-auto mb-1"
         style={{
-          // backgroundColor: "rgba(0, 0, 0, 0.5)",
           backdropFilter: "blur(3px)",
         }}
       >
-        <p className="text-white text-center text-[0.8rem] font-Lekton-Regular">
+        <p className="text-white text-center text-[0.6rem] lg:text-[0.8rem] font-Lekton-Regular">
           © 2024 Faiseur de Battements | Tous droits réservés | Website by :{" "}
           <Link target="_blank" href="https://inthegleam.com/">
             inTheGleam

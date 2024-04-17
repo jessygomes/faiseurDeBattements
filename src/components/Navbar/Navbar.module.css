@@ -46,10 +46,17 @@
 @media screen and (max-width: 799px) {
   .nav__menuList {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     font-size: 0.8rem;
-    line-height: 1.75rem;
+    line-height: 0rem;
+  }
+  .div__item {
+    width: 20rem;
+    padding: 2rem 2rem;
+    border: 1px solid #ffffff17;
+    transition: all 0.3s ease;
   }
   .nav__item {
     transition: all 0.3s ease;
