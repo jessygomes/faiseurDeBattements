@@ -19,6 +19,7 @@ export default function LecteurAll({
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState<number[]>([0]);
+  // const [timeAudio, setTimeAudio] = useState(0);
   // const [audioSrc, setAudioSrc] = useState("");
 
   // const [duration, setDuration] = useState(0);
@@ -83,6 +84,12 @@ export default function LecteurAll({
     handlePlay();
   }, [audioSrc]);
 
+  const formatTime = (time: number[]) => {
+    const minutes = Math.floor(time[0] / 60);
+    const seconds = Math.floor(time[0] % 60);
+    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+  };
+
   return (
     <div className="w-full">
       <Slider
@@ -102,7 +109,7 @@ export default function LecteurAll({
       >
         <audio ref={audioRef} src={prod?.audio} onEnded={onEnded}></audio>
         <div>
-          <h3 className="text-whiteText font-LexendTera uppercase sm:text-xl">
+          <h3 className="text-whiteText flex item font-LexendTera uppercase sm:text-xl">
             {prod?.title}
           </h3>
           <div className="flex gap-5 text-[0.8rem] sm:text-[1rem]">
@@ -112,9 +119,12 @@ export default function LecteurAll({
             <p className="text-whiteText font-Lekton-Regular uppercase">
               Style : {prod?.style}
             </p>
+            <p className="text-white font-Lekton-Regular">
+              {formatTime(currentTime)}
+            </p>
           </div>
         </div>
-        <div className="flex gap-5">
+        <div className="flex items-center gap-5">
           <button
             className={
               isPlaying

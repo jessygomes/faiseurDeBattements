@@ -128,9 +128,9 @@ export default function Compopsitions() {
             <option className=" font-Lekton-Regular bg-blackCard" value={"BPM"}>
               BPM
             </option>
-            <option className=" font-Lekton-Regular bg-blackCard" value={80}>
+            {/* <option className=" font-Lekton-Regular bg-blackCard" value={80}>
               80
-            </option>
+            </option> */}
             <option className=" font-Lekton-Regular bg-blackCard" value={90}>
               90
             </option>
@@ -174,10 +174,10 @@ export default function Compopsitions() {
               Jazz/Soul
             </option>
             <option
-              value="BoomBap"
+              value="RnB/Trapsoul"
               className=" font-Lekton-Regular bg-blackCard"
             >
-              BoomBap
+              RnB/Trapsoul
             </option>
             <option
               value="Autres"
@@ -188,9 +188,15 @@ export default function Compopsitions() {
           </select>
         </div>
         <div className="lg:mt-[2rem] h-[71%] lg:h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
-          {filteredProds.map((prod, index) => (
-            <Prods key={index} prod={prod} index={index} onPlay={onPlay} />
-          ))}
+          {filteredProds.length > 0 ? (
+            filteredProds.map((prod, index) => (
+              <Prods key={index} prod={prod} index={index} onPlay={onPlay} />
+            ))
+          ) : (
+            <p className="text-center text-white font-Lekton-Regular">
+              Aucune composition...
+            </p>
+          )}
         </div>
         <div className=" absolute bottom-0 right-0 w-full">
           {currentProd && (

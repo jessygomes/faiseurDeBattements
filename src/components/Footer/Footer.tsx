@@ -34,15 +34,15 @@ export default function Footer() {
         </p>
       </div>
       <div
-        className="w-[100%] mx-auto mb-1"
+        className="w-[95%] sm:w-[75%] lg:w-[50%] mx-auto mb-1"
         style={{
           backdropFilter: "blur(3px)",
         }}
       >
         <p className="text-white text-center text-[0.6rem] lg:text-[0.8rem] font-Lekton-Regular">
           © 2024 Faiseur de Battements | Tous droits réservés | Website by :{" "}
-          <Link target="_blank" href="https://inthegleam.com/">
-            inTheGleam
+          <Link target="_blank" href="">
+            CJ
           </Link>
         </p>
       </div>

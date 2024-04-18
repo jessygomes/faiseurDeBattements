@@ -39,9 +39,11 @@ function Noise() {
     // Loop
     const loop = () => {
       paintNoise(frame);
-      loopTimeout = window.setTimeout(() => {
-        window.requestAnimationFrame(loop);
-      }, 1000 / 25);
+      if (typeof window !== "undefined") {
+        loopTimeout = window.setTimeout(() => {
+          window.requestAnimationFrame(loop);
+        }, 1000 / 25);
+      }
     };
 
     // Setup

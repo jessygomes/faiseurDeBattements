@@ -60,7 +60,7 @@ export default function ContactForm() {
         delay: 1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="w-[95%] mx-auto p-[0.5rem] my-[1rem] sm:p-[1rem] sm:my-0"
+      className="w-[95%] mx-auto p-[0.5rem] my-[1rem] sm:p-[1rem] sm:my-0 lg:w-[100%]"
       style={{
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         backdropFilter: "blur(5px)",

@@ -2,6 +2,12 @@ import ContactForm from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import HeaderLogoContact from "@/components/HeaderLogo/HeaderLogoContact";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Faiseur de Battements",
+  description: "Contacter le faiseur de battements",
+};
 
 export default function Contact() {
   return (
