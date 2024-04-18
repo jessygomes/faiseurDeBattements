@@ -4,7 +4,8 @@ import Noise from "../components/Noise/Noise";
 
 export const metadata: Metadata = {
   title: "Faiseur de Battements",
-  description: "Blog musical : Présentation des compositions du beatmaker",
+  description:
+    "Blog musical : donner une image aux sons, s'introduire dans l'univers du faiseur de battement",
 };
 
 export default function RootLayout({
