@@ -41,10 +41,9 @@ export default function Home() {
           className="h-full flex flex-col justify-around"
           style={{ transform: "scale(-1)" }}
         >
-          <div className="mt-[2rem]">
+          {/* <div className="mt-[2rem]">
             <LastSong />
-          </div>
-          <div></div>
+          </div> */}
           <Footer />
         </div>
       </section>

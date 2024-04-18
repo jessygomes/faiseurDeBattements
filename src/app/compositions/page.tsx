@@ -1,22 +1,36 @@
-import LecteurCompo from "@/components/LecteurCompo/LecteurCompo";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import prods from "../../data/prods";
+import { useRef, useState } from "react";
+import { Prod } from "../../lib/type";
+import LecteurAll from "@/components/LecteurAll/LecteurAll";
+import Prods from "@/components/Prods/Prods";
 
 export default function Compopsitions() {
+  const [backgroundImage, setBackgroundImage] = useState("");
+  const [currentProd, setCurrentProd] = useState<Prod | null>(null);
+
+  const onPlay = (prod: Prod) => {
+    setCurrentProd(prod);
+    setBackgroundImage(prod.image);
+    console.log(currentProd);
+  };
+
   return (
     <main
-      className="lg:h-[100vh] flex flex-col items-center lg:flex-row min-h-screen"
+      className="lg:h-[100vh] flex flex-col items-center lg:flex-row min-h-screen bg-blackPrimary"
       style={{
-        backgroundImage: " url(/Images/464911.jpg)",
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "opacity(0.90)",
       }}
     >
-      <section className="w-[95%] h-[20rem] lg:w-[50%] lg:h-full flex flex-col justify-between">
+      <section className="w-[95%] h-[20rem] lg:w-[50%] lg:h-full flex flex-col justify-between items-center">
         <Link href="/">
           <Image
-            className="w-auto h-[3rem] object-contain lg:w-auto lg:h-[4rem]"
+            className="w-auto h-[3rem] object-contain ml-2 mt-2 lg:w-auto lg:h-[4rem]"
             src="/Logo/logoBlanc.png"
             alt="Logo"
             width={200}
@@ -24,15 +38,15 @@ export default function Compopsitions() {
           />
         </Link>
         <h1 className="text-center uppercase tracking-widest text-white text-3xl lg:text-[3rem] font-LexendTera">
-          magenta
+          {currentProd ? currentProd.title : "click play"}
         </h1>
-        <p className=" text-right text-white font-LexendTera pr-2">CJ</p>
+        <p className="text-white font-Sansation_Light mr-5 mb-4">FdB</p>
       </section>
 
       <section
         className="h-[35rem] w-[95%] mb-3 lg:w-[50%] lg:mb-0 lg:h-full"
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          // backgroundColor: "rgba(0, 0, 0, 0.5)",
           backdropFilter: "blur(3px)",
           boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
         }}
@@ -80,11 +94,13 @@ export default function Compopsitions() {
             </option>
           </select>
         </div>
-        <div className="w-full mt-[3rem] flex flex-col gap-[1rem] justify-center items-center">
-          <LecteurCompo />
-          <LecteurCompo />
-          <LecteurCompo />
-          <LecteurCompo />
+        <div className="mt-[2rem] h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
+          {prods.map((prod, index) => (
+            <Prods key={index} prod={prod} onPlay={onPlay} />
+          ))}
+        </div>
+        <div className=" absolute bottom-0 right-0 w-full">
+          {currentProd && <LecteurAll prod={currentProd} />}
         </div>
       </section>
     </main>

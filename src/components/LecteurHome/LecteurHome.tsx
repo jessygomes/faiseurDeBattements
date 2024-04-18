@@ -29,7 +29,7 @@ export default function LecteurHome() {
 
   return (
     <div className="flex gap-2">
-      <audio ref={audioRef} src="\Audios\GingerAle_90.mp3"></audio>
+      <audio ref={audioRef} src="\Audios\En_mi_casa.mp3"></audio>
       <p className="font-Sansation_Light text-whiteText uppercase">sound</p>
       <input type="radio" name="on-off" id="on" onClick={handlePlay} />
       <p className="font-Sansation_Light text-whiteText uppercase">ON</p>
