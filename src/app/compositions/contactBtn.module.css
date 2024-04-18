@@ -1,0 +1,27 @@
+.div__item {
+  width: 10rem;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.3s ease;
+  font-family: "Lekton-Regular";
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.div__item:hover {
+  text-shadow: 0 0 0px aliceblue, 0 0 5px aliceblue, 0 0 5px aliceblue,
+    0 0 5px aliceblue, 0 0 0px aliceblue, 0 0 0px aliceblue;
+  color: #ffffff;
+  backdrop-filter: blur(5px); /* Add this line */
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 15px 9.9px 8px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+@media screen and (max-width: 799px) {
+  .div__item {
+    width: 10rem;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}

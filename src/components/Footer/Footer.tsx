@@ -5,9 +5,9 @@ import Newsletter from "../Newsletter/Newsletter";
 export default function Footer() {
   return (
     <footer className="flex flex-col gap-[1rem]">
-      <Newsletter />
+      {/* <Newsletter /> */}
       <div
-        className="w-[95%] lg:w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
+        className="w-[95%] sm:w-[75%] lg:w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.5)",
           backdropFilter: "blur(3px)",

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function HeaderLogo() {
+export default function HeaderLogoContact() {
   return (
     <motion.header
       initial={{ opacity: 0, scale: 0.5 }}
@@ -17,14 +17,14 @@ export default function HeaderLogo() {
     >
       <Link href="/">
         <Image
-          className="w-auto h-[7rem] object-contain mx-auto lg:w-auto lg:h-[8rem] image-neon"
+          className="w-auto h-[4rem] object-contain mx-auto lg:w-auto lg:h-[5rem] image-neon"
           src="/Logo/logoBlanc.png"
           width={500}
           height={500}
           alt="Technicien électricien travaillant dans un standard de fusibles et utilisant une tablette"
         />
       </Link>
-      <h1 className="text-center uppercase tracking-widest text-white text-xl lg:text-3xl font-Sansation_Light neon">
+      <h1 className="text-center uppercase tracking-widest text-white text-l lg:text-2xl font-Sansation_Light neon">
         faiseur de battements
       </h1>
     </motion.header>

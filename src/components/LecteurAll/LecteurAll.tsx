@@ -7,13 +7,19 @@ import { Prod } from "../../lib/type";
 
 interface LecteurCompoProps {
   prod: Prod;
+  audioSrc: string;
+  onEnded: () => void;
 }
 
-export default function LecteurAll({ prod }: LecteurCompoProps) {
+export default function LecteurAll({
+  prod,
+  audioSrc,
+  onEnded,
+}: LecteurCompoProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState<number[]>([0]);
-  const [audioSrc, setAudioSrc] = useState(prod?.audio || "");
+  // const [audioSrc, setAudioSrc] = useState("");
 
   // const [duration, setDuration] = useState(0);
 
@@ -64,16 +70,17 @@ export default function LecteurAll({ prod }: LecteurCompoProps) {
     }
   };
 
-  // useEffect(() => {
-  //   // Mettez à jour audioSrc lorsque la prop 'audioProp' change
-  //   setAudioSrc({prod?.audio});
-  // }, [audioProp]);
-
   useEffect(() => {
     if (audioSrc && audioRef.current) {
+      console.log("audioSrc:", audioSrc);
+      console.log("audioRef.current:", audioRef.current);
       audioRef.current.src = audioSrc;
       handlePlay();
     }
+  }, [audioSrc]);
+
+  useEffect(() => {
+    handlePlay();
   }, [audioSrc]);
 
   return (
@@ -86,24 +93,26 @@ export default function LecteurAll({ prod }: LecteurCompoProps) {
         step={1}
       />
       <div
-        className="w-full flex flex-col lg:flex-row gap-2 lg:gap-10 justify-center items-center h-[8rem] lg:h-20"
+        className="w-full flex lg:flex-row gap-16 lg:gap-10 px-[1rem] lg:px-[3rem] justify-between items-center h-[5rem] sm:h-[7rem] lg:h-20"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.5)",
           backdropFilter: "blur(5px)",
           boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
         }}
       >
-        <audio ref={audioRef} src={prod?.audio}></audio>
-        <h3 className="text-whiteText font-LexendTera uppercase text-xl">
-          {prod?.title}
-        </h3>
-        <div className="flex gap-5">
-          <p className="text-whiteText font-Lekton-Regular uppercase">
-            bpm : {prod?.bpm}
-          </p>
-          <p className="text-whiteText font-Lekton-Regular uppercase">
-            Style : {prod?.style}
-          </p>
+        <audio ref={audioRef} src={prod?.audio} onEnded={onEnded}></audio>
+        <div>
+          <h3 className="text-whiteText font-LexendTera uppercase sm:text-xl">
+            {prod?.title}
+          </h3>
+          <div className="flex gap-5 text-[0.8rem] sm:text-[1rem]">
+            <p className="text-whiteText  font-Lekton-Regular uppercase">
+              bpm : {prod?.bpm}
+            </p>
+            <p className="text-whiteText font-Lekton-Regular uppercase">
+              Style : {prod?.style}
+            </p>
+          </div>
         </div>
         <div className="flex gap-5">
           <button

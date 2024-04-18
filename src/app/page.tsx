@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer/Footer";
 import HeaderLogo from "@/components/HeaderLogo/HeaderLogo";
-import LastSong from "@/components/LastSong/LastSong";
 import LecteurHome from "@/components/LecteurHome/LecteurHome";
 import Navbar from "@/components/Navbar/Navbar";
 
@@ -20,7 +19,7 @@ export default function Home() {
           <div className="mt-[5rem] lg:mt-2">
             <HeaderLogo />
           </div>
-          <div className="pb-[2rem] flex flex-col justify-center items-center gap-2">
+          <div className="pb-[2rem] flex flex-col justify-center items-center gap-7">
             <Navbar />
             <LecteurHome />
           </div>
@@ -41,9 +40,6 @@ export default function Home() {
           className="h-full flex flex-col justify-around"
           style={{ transform: "scale(-1)" }}
         >
-          {/* <div className="mt-[2rem]">
-            <LastSong />
-          </div> */}
           <Footer />
         </div>
       </section>
