@@ -36,7 +36,9 @@ export default function Prods({ prod, onPlay, index }: LecteurCompoProps) {
       </div>
       <button
         className="text-white hover:text-[#c74e4e] transition-all duration-300 ease-in-out"
-        onClick={(event: React.MouseEvent<HTMLButtonElement>) => onPlay(prod)}
+        onClick={(event: React.MouseEvent<HTMLButtonElement>) =>
+          onPlay(prod, index)
+        }
       >
         <FontAwesomeIcon icon={faPlay} />
       </button>
