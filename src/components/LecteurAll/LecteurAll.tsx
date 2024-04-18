@@ -112,7 +112,7 @@ export default function LecteurAll({
           <h3 className="text-whiteText flex item font-LexendTera uppercase sm:text-xl">
             {prod?.title}
           </h3>
-          <div className="flex gap-5 text-[0.8rem] sm:text-[1rem]">
+          <div className="flex gap-3 text-[0.7rem] sm:text-[1rem]">
             <p className="text-whiteText  font-Lekton-Regular uppercase">
               bpm : {prod?.bpm}
             </p>
