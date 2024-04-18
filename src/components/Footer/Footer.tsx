@@ -20,7 +20,7 @@ export default function Footer() {
         <Link
           target="_blank"
           className="text-xl text-center text-white w-[20%] mx-auto hover:text-orange-400 transition-all duration-300 ease-in-out"
-          href="https://soundcloud.com/sanshiprods"
+          href="https://soundcloud.com/cjsanshi"
         >
           <FontAwesomeIcon icon={faSoundcloud} />
         </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
             Instagram
           </Link>{" "}
           -{" "}
-          <Link target="_blank" href="https://soundcloud.com/sanshiprods">
+          <Link target="_blank" href="https://soundcloud.com/cjsanshi">
             Soundcloud
           </Link>{" "}
           - <Link href="/mentions-legales">Mentions légales</Link> -{" "}
