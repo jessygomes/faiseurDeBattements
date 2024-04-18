@@ -1,31 +1,4 @@
 "use client";
-// import SibApiV3Sdk from "@getbrevo/brevo";
-
-// const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-//   let defaultClient = SibApiV3Sdk.ApiClient.instance;
-
-//   let apiKey = defaultClient.authentications["api-key"];
-//   apiKey.apiKey =
-//     "";
-
-//   let apiInstance = new SibApiV3Sdk.ContactsApi();
-
-//   let createContact = new SibApiV3Sdk.CreateContact();
-
-//   createContact.email = (event.target as HTMLInputElement).value;
-//   createContact.listIds = [2];
-
-//   apiInstance.createContact(createContact).then(
-//     function (data: any) {
-//       console.log(
-//         "API called successfully. Returned data: " + JSON.stringify(data)
-//       );
-//     },
-//     function (error: any) {
-//       console.error(error);
-//     }
-//   );
-// };
 
 export default function Newsletter() {
   return (
