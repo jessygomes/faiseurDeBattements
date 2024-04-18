@@ -1,10 +1,30 @@
 import Link from "next/link";
 import React from "react";
-import Newsletter from "../Newsletter/Newsletter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSoundcloud } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
     <footer className="flex flex-col gap-[1rem]">
+      <div
+        className="w-[95%] sm:w-[75%] lg:w-[50%] mx-auto py-5 px-10 flex items-center justify-center"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          backdropFilter: "blur(3px)",
+          boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
+        }}
+      >
+        {/* <p className="text-whiteText text-center font-Lekton-Regular text-[0.8rem]">
+          SOUNDCLOUD :
+        </p> */}
+        <Link
+          target="_blank"
+          className="text-xl text-center text-white w-[20%] mx-auto hover:text-orange-400 transition-all duration-300 ease-in-out"
+          href="https://soundcloud.com/sanshiprods"
+        >
+          <FontAwesomeIcon icon={faSoundcloud} />
+        </Link>
+      </div>
       {/* <Newsletter /> */}
       <div
         className="w-[95%] sm:w-[75%] lg:w-[50%] mx-auto py-5 px-10 flex flex-col gap-4"
