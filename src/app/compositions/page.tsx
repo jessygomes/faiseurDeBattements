@@ -114,7 +114,7 @@ export default function Compopsitions() {
           delay: 1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="h-[65%] w-[95%] bg-blackCard lg:bg-transparent rounded-lg lg:rounded-none mb-3 sm:h-[50%] lg:w-[50%] lg:mb-0 lg:h-full flex flex-col justify-between"
+        className="h-[65%] w-[95%] bg-blackCard lg:bg-transparent rounded-lg lg:rounded-none mb-3 sm:h-[50%] lg:w-[50%] lg:mb-0 lg:h-full flex flex-col justify-between lg:block"
         style={{
           backdropFilter: "blur(3px)",
           boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
