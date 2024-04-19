@@ -114,7 +114,7 @@ export default function Compopsitions() {
           delay: 1,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="h-[29rem] w-[95%] rounded-lg lg:rounded-none mb-3 sm:h-[50%] lg:w-[50%] lg:mb-0 lg:h-full"
+        className="h-[60%] w-[95%] bg-blackCard lg:bg-transparent rounded-lg lg:rounded-none mb-3 sm:h-[50%] lg:w-[50%] lg:mb-0 lg:h-full"
         style={{
           backdropFilter: "blur(3px)",
           boxShadow: "0px 15px 9.9px 8px rgba(0, 0, 0, 0.25)",
@@ -187,7 +187,7 @@ export default function Compopsitions() {
             </option>
           </select>
         </div>
-        <div className="lg:mt-[2rem] h-[71%] lg:h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
+        <div className="lg:mt-[2rem] h-[60%] lg:h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
           {filteredProds.length > 0 ? (
             filteredProds.map((prod, index) => (
               <Prods key={index} prod={prod} index={index} onPlay={onPlay} />
