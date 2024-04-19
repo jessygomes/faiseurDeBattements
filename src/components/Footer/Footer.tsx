@@ -19,7 +19,7 @@ export default function Footer() {
         </p> */}
         <Link
           target="_blank"
-          className="text-xl text-center text-white w-[20%] mx-auto hover:text-orange-400 transition-all duration-300 ease-in-out"
+          className="text-xl text-center text-white w-[20%] lg:w-[30%] mx-auto hover:text-orange-400 transition-all duration-300 ease-in-out"
           href="https://soundcloud.com/cjsanshi"
         >
           <FontAwesomeIcon icon={faSoundcloud} />
