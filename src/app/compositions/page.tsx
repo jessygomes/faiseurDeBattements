@@ -198,7 +198,7 @@ export default function Compopsitions() {
             </p>
           )}
         </div>
-        <div className="h-[15%] w-full">
+        <div className="lg:absolute lg:bottom-0 lg:right-0 w-full">
           {currentProd && (
             <LecteurAll
               prod={currentProd}
