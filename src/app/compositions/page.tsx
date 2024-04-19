@@ -187,7 +187,7 @@ export default function Compopsitions() {
             </option>
           </select>
         </div>
-        <div className="lg:mt-[2rem] h-[60%] lg:h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
+        <div className="lg:mt-[2rem] h-[70%] lg:h-[74%] overflow-scroll overflow-x-hidden custom-navbar">
           {filteredProds.length > 0 ? (
             filteredProds.map((prod, index) => (
               <Prods key={index} prod={prod} index={index} onPlay={onPlay} />
@@ -198,7 +198,7 @@ export default function Compopsitions() {
             </p>
           )}
         </div>
-        <div className=" absolute bottom-0 right-0 w-full">
+        <div className="h-[15%] absolute bottom-0 right-0 w-full">
           {currentProd && (
             <LecteurAll
               prod={currentProd}
