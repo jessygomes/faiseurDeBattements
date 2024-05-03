@@ -81,7 +81,7 @@ export default function Compopsitions() {
           <Image
             className="w-auto h-[3rem] object-contain ml-2 mt-2 lg:w-auto lg:h-[4rem] image-neon"
             src="/Logo/logoBlanc.png"
-            alt="Logo"
+            alt="Logo de faiseur de battements"
             width={200}
             height={200}
           />
@@ -101,7 +101,7 @@ export default function Compopsitions() {
           {currentProd ? currentProd.title : "click play"}
         </motion.h1>
         <Link href="/contact" className={styles.nav__item}>
-          <div className={styles.div__item}>Contact</div>
+          <button className={styles.div__item}>Contact</button>
         </Link>
       </section>
 

@@ -10,7 +10,7 @@ interface LecteurCompoProps {
 
 export default function Prods({ prod, onPlay, index }: LecteurCompoProps) {
   return (
-    <div
+    <section
       className="w-full flex lg:flex-row gap-10 lg:gap-10 justify-between px-[2rem] lg:px-[3rem] mb-[1rem] items-center h-[5rem] lg:h-14 hoveredCard"
       onClick={(event: React.MouseEvent<HTMLDivElement>) => onPlay(prod, index)}
       style={
@@ -42,6 +42,6 @@ export default function Prods({ prod, onPlay, index }: LecteurCompoProps) {
       >
         <FontAwesomeIcon icon={faPlay} />
       </button>
-    </div>
+    </section>
   );
 }

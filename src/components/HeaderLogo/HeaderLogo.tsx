@@ -21,7 +21,7 @@ export default function HeaderLogo() {
           src="/Logo/logoBlanc.png"
           width={500}
           height={500}
-          alt="Technicien électricien travaillant dans un standard de fusibles et utilisant une tablette"
+          alt="Logo de faiseur de battements"
         />
       </Link>
       <h1 className="text-center uppercase tracking-widest text-white text-xl lg:text-3xl font-Sansation_Light neon">

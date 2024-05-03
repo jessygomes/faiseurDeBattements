@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer/Footer";
 import HeaderLogo from "@/components/HeaderLogo/HeaderLogo";
 import React from "react";
 
@@ -89,8 +88,8 @@ export default function PolitiqueDeConfidentialite() {
               <p>
                 Le traitement n&apos;est licite que si, et dans la mesure où, au
                 moins une des conditions suivantes est remplie : <br /> - la
-                personne concernée a consenti au traitement de ses données
-                àcaractère personnel pour une ou plusieurs finalités spécifiques
+                personne concernée a consenti au traitement de ses données à
+                caractère personnel pour une ou plusieurs finalités spécifiques
                 ; <br /> - la traitement est nécessaire à l&apos;exécution
                 d&apos;un contrat auquel la personne concernée est partie ou à
                 l&apos;exécution de mesures précontractuelles prises à la
@@ -136,7 +135,7 @@ export default function PolitiqueDeConfidentialite() {
               </h2>
               <p>
                 Données collectées automatiquement : Nous ne collections aucune
-                donée automatiquement sur notre site.
+                donnée automatiquement sur notre site.
               </p>
               <p>
                 Données recueillies de façon non automatique : Nous pouvons
