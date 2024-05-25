@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Noise from "../components/Noise/Noise";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Faiseur de Battements",
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <Noise />
-      <body>{children}</body>
+      <body>
+        {children} <Analytics />
+      </body>
     </html>
   );
 }
